@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <form action="">
+        <h1>USER RIGISTINATION</h1>
+        <input type="text" id="uname" placeholder="Enter username here">
+        <br>
+        <br>
+        <input type="text" id="upass" placeholder="Enter userpass here">
+        <br>
+        <br>
+        <input type="text" id="Uemail" placeholder="Enter useremail here">
+        <br>
+        <br>
+        <input type="submit" value="sign up" onclick="sign up">
+    </form>
+    </center>
+    <script>
+        function signup()
+        {
+           var username = document.getElementById('uanme').value;
+           var userpass = document.getElementById('upass').value;
+           var useremail = document.getElementById('uemail').value;
+
+          if(user == "" || userpass == "" || useremail == "")
+          {
+              alert('fileds can not be empty')
+          }
+          else
+          {
+            localStorage.setItem("Name1",username)
+           localStorage.setItem("pass1",userpass)
+           localStorage.setItem("email1",useremail)
+           alert('user rigisterd succefully');
+          }
+        }
+    </script>
+</body>
+</html>

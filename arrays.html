@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img name="slide" alt="" height="600px" width="100%">
+    <script>
+        var i = 0;
+
+        var images=[];
+        images[0]='download.jpg';
+        images[1]='images .png';
+        function changeimg()
+        {
+            document.slide.src=images[i];
+            if(i < images.length -1)
+            {
+                i++;
+            }
+            else
+            {
+                i=0;
+            }
+            setTimeout("changeimg()",3000);
+        }
+        window.onload=changeimg();
+
+        var  a = ["Eshal","Insha","Sahil","Inara"];
+
+        // Array Methods
+        a.reverse();
+        a.push("Panda");
+        a.pop();
+        a.unshift();
+
+        // Array Indexing
+
+        document.write(a);
+        document.write("</br>");
+        document.write(a.indexDF("Insha"));
+    </script>
+</body>
+</html>

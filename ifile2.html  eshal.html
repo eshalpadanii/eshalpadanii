@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="uname" placeholder="Enter Username">
+    <input type="text" id="uemail" placeholder="Enter Password">
+    <button onclick="sn()">Login</button>
+
+    <script>
+    function sn()
+    {
+        var username = document.getElementByid('uname').value;
+        var username = document.getElementByid('uemail').value;
+        
+        // if(username == "" || useremail == "")
+        // {
+        //     alert('not submiited')
+        // }
+        // if(username== "abc" || useremail== "123")
+        // {
+        //     alert('submiited');
+        // }
+        // else
+        // {
+        //     alert('condition not matched')
+        // }
+
+        if(username=="abc")
+        {
+            alert('user name abc');
+        }
+        else if(username =="def")
+        {
+            alert('user name def')
+        }
+        else
+        {
+            alert('user not authorized')
+        }
+    }
+    </script>
+</body>
+</html>
