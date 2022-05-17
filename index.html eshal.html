@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images.jpg">
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    nav
+    {
+        height: 80px;
+        background-color: lightblue;
+    }
+    .textlogo
+    {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 20px;
+        line-height: 80px;
+    }
+    nav ul{
+        float: right;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        padding: 10px;
+    }
+    nav ul li a:hover
+    {
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        transition: 0.9s;
+    }
+    .mydiv
+    {
+        background-image: url('download.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+    }
+    .mybtn
+    {
+        background-color: red;
+        color: white;
+        font-weight: bolder;
+        margin-top: 15px;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .maindiv
+    {
+        height: 300px;
+        background-color: lightblue;
+        display: flex;
+        flex-direction: row;
+    }
+    .para
+    {
+        height: 300px;
+        flex: 50%;
+        margin: 20px;
+    }
+    .img
+    {
+        height: 270px;
+        background-image: url('images.jpg');
+        flex: 50%;
+        margin: 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .img:hover{
+        transform: scale(1.1);
+        transition: 0.9s;
+    }
+    .imagebox
+    {
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+    .imageleft
+    {
+        flex: 30%;
+        background-color: aqua;
+        height: 300px;
+        background-image: url('hqdefault.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .imagecenter
+    {
+        flex: 30%;
+        background-color: red;
+        height: 300px;
+        background-image: url('images (1).jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .imageright
+    {
+        flex: 30%;
+        background-color: yellow;
+        height: 300px;
+        background-image: url('images.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <label class="textlogo">WebDesignX</label>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="aboutus.html">About us</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="mydiv">
+        <p style="color: black;text-align: center;padding-top: 250px;font-size: 50px;font-weight: bolder;text-transform: uppercase;">Welcome to the WebDesignX</p>
+      <center> <button class="mybtn">Learn more</button></center>
+    </div>
+    <center>
+        <h1 style="color: red;margin-top: 30px;margin-bottom: 20px;">paragraph</h1>
+    </center>
+    <div class="maindiv">
+        <div class="para">
+            <p style="color: black;text-align: justify;margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 In distinctio sequi sapiente officia magni, excepturi necessitatibus est ad, aspernatur deserunt consequuntur,
+                  aperiam nihil doloremque sint dolore possimus pariatur.
+                   Dicta repellendus sint nulla nobis delectus facere! Molestias iusto esse voluptates dolore perferendis praesentium,
+                    tenetur incidunt voluptate magni nobis, ipsum tempora eaque adipisci veniam labore,
+                     a nesciunt repudiandae saepe. Corrupti blanditiis unde autem sint necessitatibus repellat? 
+                     Excepturi ipsum eos dignissimos illum et. Provident laudantium laboriosam vel, veniam ad nemo ab.
+                      Ea nulla id modi non vero quos voluptatum explicabo ut deleniti! Esse nesciunt omnis iste voluptatibus 
+                      sunt dolorum eius soluta ratione fuga?</p>
+        </div>
+        <div class="img"></div>
+    </div>
+    <div class="imagebox">
+        <div class="imageleft"></div>
+        <div class="imagecenter"></div>
+        <div class="imageright"></div>
+    </div>
+    <center>
+        <h1 style="color: red;margin-top: 30px;margin-bottom: 20px;">Contact</h1>
+    </center>
+    <div class="footer" style="background-color: black;height: 100px;">
+        <ul>
+           <center>
+            <li style="display: inline-block; margin-top: 30px; margin: 20px;">
+                <i class="fa fa-facebook" style="color: white; font-size: 30px;"></i>
+            </li>
+            <li style="display: inline-block; margin: 20px;">
+                <i class="fa fa-twitter" style="color: white; font-size: 30px;"></i>
+            </li>
+            <li style="display: inline-block; margin: 20px;">
+                <i class="fa fa-instagram" style="color: white; font-size: 30px;"></i>
+            </li>
+            <li style="display: inline-block; margin: 20px;">
+                <i class="fa fa-snapchat" style="color: white; font-size: 30px;"></i>
+            </li>
+           </center>
+        </ul>
+        <div style="background-color: lightblue; padding: 20px;">
+           <center>
+            <p style="color: black;">MADE BY ESHAL</p>
+           </center>
+        </div>
+    </div>
+</body>
+</html>
